@@ -1,4 +1,4 @@
-# the-office-test
+# The Office Quiz
 
 This assignment was designed to challenge my understanding of user interactivity and the logic required to process that input. I was asked to design a quiz game that gave the player a set amount of time to answer all the given questions with incorrect answers resulting in a time deduction. The final score is how long you had left when you finished. The game also alerts whether or not your answers were correct in real time. 
 
