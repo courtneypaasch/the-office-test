@@ -33,12 +33,6 @@ function Question(text, choices, answer) {
 //function starts the game and verifies game isn't over
 function startGame() {
 
-    var playerInitials = localStorage.getItem("playerInitials");
-    var playerScore = localStorage.getItem("playerScore");
-    console.log(playerInitials);
-    console.log(playerScore);
-
-
     if (quiz.isEnded()) {
         document.getElementById("timer").setAttribute("class", "hide");
         clearInterval(timerInterval);
@@ -128,19 +122,6 @@ function gameOver() {
     document.getElementById("answers").setAttribute("class", "hide");
     document.getElementById("gameOver").removeAttribute("class", "hide");
 };
-
-//saves scores and adds to highscore list
-function addScores() {
-
-    var playerInitials = localStorage.getItem("playerInitials");
-    var playerScore = localStorage.getItem("playerScore");
-    console.log(playerInitials);
-    console.log(playerScore);
-
-    var displayInitials = document.createElement("div");
-    displayInitials.innerHTML = playerInitials + ": " + playerScore;
-    document.getElementById("scores").appendChild(displayInitials);
-}
 
 //EVENT HANDLERS
 
