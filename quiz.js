@@ -144,7 +144,7 @@ $("#random-button").on("click", function () {
     }, 1000);
 })
 
-var savedHighScores  = ["am: 0", "cp:0"];
+var savedHighScores  = [];
 
 //action taken when score is being saved. Adds to local storage
 $("#submitScore").on("click", function () {
@@ -153,11 +153,6 @@ $("#submitScore").on("click", function () {
     var playerScore = secondsLeft;
     var newHighScore = playerInitials.concat(playerScore);
     localStorage.setItem("newHighScore", newHighScore);
-
-    savedHighScores[savedHighScores.length] = newHighScore;
-
-    localStorage.setItem('savedHighScores', savedHighScores);
-
 })
 
 
