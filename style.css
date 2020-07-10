@@ -1,0 +1,115 @@
+header {
+    background-color:#e9ecef;
+}
+.jumbotron {
+    padding: 1.5rem;
+}
+
+.time {
+    text-align: right;
+}
+
+#timer {
+    float: right;
+    padding-top: 1%;
+    margin-right: 2%;
+    font-size: 10px;
+}
+.playAgain {
+    float: left;
+    padding-top: 1%;
+    margin-left: 2%;
+    font-size: 10px;
+}
+.highscores {
+    float: left;
+    padding-top: 1%;
+    margin-left: 2%;
+    font-size: 10px;
+}
+
+.instructions {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: large;
+    text-align: center;
+}
+
+#quiz {
+    justify-content: center;
+    align-items: center;
+
+}
+
+#question {
+    margin: 5%;
+    font-size: large;
+}
+
+.hide {
+    display: none;
+}
+
+.answerButton {
+    margin: 5px;
+    margin-left: 10%;
+}
+
+.answerButton:hover {
+  background-color: gray;  
+}
+.answerButton:focus {
+    outline: none;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    margin: 20%;
+    margin-top: 50px;
+    padding: 20px;
+    width: 60%;
+    overflow: hidden;
+  }
+  
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submitScore {
+    margin-top: 10px;
+    margin-left: 45%;
+}
+
+#result {
+    margin: 3%;
+}
+
+#scoresBack, #scoresClear {
+    margin: 10px;
+    width: 120px;
+
+}
+
+#scores  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

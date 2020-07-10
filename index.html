@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The Office Quiz</title>
+
+    <!-- Added link to the jQuery Library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <a class="highscores" href="highscores.html">View Highscores</a>
+        <div id="timer">Timer: <span class="timerCountDown">30</span></div>
+        <div class="jumbotron">
+            <h1 class="text-center">The Office Quiz!</h1>
+        </div>
+
+    </header>
+    <main>
+        <div id="openScreen">
+            <div class="instructions">
+                <p>Try to answer as many questions as you can before the timer runs out!</p>
+                <p>Incorrect answers reduce the timer 10 seconds.</p>
+                <p>Good Luck!</p>
+            </div>
+
+            <div class="text-center">
+                <button id="random-button" class="btn btn-primary btn-lg fa fa-question">Click to Begin</button>
+            </div>
+        </div>
+
+        <div id="quiz" class="hide clearfix">
+            <div class="card">
+                <div id="question">Question</div><br>
+                <div id="answers">
+                    <button id="btn0" class="answerButton"><span id="choice0"></span></button><br>
+                    <button id="btn1" class="answerButton"><span id="choice1"></span></button><br>
+                    <button id="btn2" class="answerButton"><span id="choice2"></span></button><br>
+                    <button id="btn3" class="answerButton"><span id="choice3"></span></button>
+                </div>
+                <div id="gameOver" class="hide">
+                    <form>
+                        <input type="text" id="playerInitials" placeholder="Enter your initials" />
+                    </form>
+                    <a href="highscores.html"><button id="submitScore">Submit</button></a>
+                </div>
+                <div id="result">
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="quiz.js"></script>
+    
+</body>
+
+</html>
